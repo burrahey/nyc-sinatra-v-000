@@ -1,0 +1,16 @@
+Figure Name: <%= @figure.name %>
+<br />
+<br />
+Landmarks:
+<br />
+<% @figure.landmarks.each_with_index do |landmark, index| %>
+<%=index + 1 %>. <%=landmark.name %>
+<br />
+<% end %>
+<br />
+Titles:
+<br />
+<% @figure.titles.each_with_index do |title, index| %>
+<%=index + 1 %>. <%=title.name %>
+<br />
+<% end %>
